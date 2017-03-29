@@ -1,0 +1,22 @@
+using System;
+namespace kniga
+{
+static void Main(string[] args){
+ do
+            {
+                Console.WriteLine("Hello User");
+                string pass = "1234";
+                string username = "sup";
+
+                Console.WriteLine("Enter username");
+                string user = Console.ReadLine();
+                if (username == user) { Console.WriteLine("Authorization was successful"); }
+
+                Console.WriteLine("Enter password");
+                string password = Console.ReadLine();
+                if (pass == password) { Console.WriteLine("Password Correct"); }
+                Console.WriteLine("You are in the system");
+            } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+                 
+        }
+}
